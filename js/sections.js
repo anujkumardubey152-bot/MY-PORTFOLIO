@@ -174,41 +174,105 @@ function renderCertifications() {
 }
 
 // ASK ANUJ SECTION
+
 function renderAssistant() {
   const container = document.getElementById("assistant-content");
 
   container.innerHTML = `
     <div class="assistant-panel">
-      <div class="project-category">AI-POWERED PORTFOLIO ASSISTANT</div>
+      <div class="project-category">
+        AI-POWERED PORTFOLIO ASSISTANT
+      </div>
 
       <h3>Curious about my work?</h3>
 
       <p>
-        Meet ASK ANUJ — an AI assistant designed to answer
-        questions about my technical skills, projects,
-        education and experience.
+        Meet ASK ANUJ — ask me about my skills,
+        projects, education and experience.
       </p>
 
       <div class="assistant-status">
         <span class="status-dot"></span>
-        AI ASSISTANT — COMING ONLINE
+        GEMINI AI — ONLINE
       </div>
 
       <div class="assistant-input-area">
         <input
+          id="ask-anuj-input"
           type="text"
           placeholder="Ask me anything about my work..."
-          disabled
+          maxlength="1000"
         />
 
-        <button disabled>ASK ↗</button>
+        <button id="ask-anuj-button" type="button">
+          ASK ↗
+        </button>
       </div>
 
+      <div
+        id="ask-anuj-response"
+        class="assistant-response"
+        aria-live="polite"
+      ></div>
+
       <p class="assistant-note">
-        Gemini integration will be added in the next stage.
+        Powered by Google Gemini AI.
       </p>
     </div>
   `;
+
+  const input = document.getElementById("ask-anuj-input");
+  const button = document.getElementById("ask-anuj-button");
+  const output = document.getElementById("ask-anuj-response");
+
+  async function sendMessage() {
+    const message = input.value.trim();
+
+    if (!message) {
+      output.textContent = "Please enter a question.";
+      return;
+    }
+
+    input.disabled = true;
+    button.disabled = true;
+    button.textContent = "THINKING...";
+    output.textContent = "Anuj's AI assistant is thinking...";
+
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Something went wrong.");
+      }
+
+      output.textContent = data.answer;
+
+    } catch (error) {
+      output.textContent = error.message ||
+        "Unable to connect. Please try again.";
+    } finally {
+      input.disabled = false;
+      button.disabled = false;
+      button.textContent = "ASK ↗";
+      input.focus();
+    }
+  }
+
+  button.addEventListener("click", sendMessage);
+
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      sendMessage();
+    }
+  });
 }
 
 
