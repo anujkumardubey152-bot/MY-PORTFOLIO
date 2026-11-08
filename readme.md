@@ -93,4 +93,176 @@ My current technical interests and working toolkit:
 | Programming | Python, Java, C, SQL |
 | Machine Learning | Scikit-learn, TensorFlow, PyTorch, XGBoost |
 | AI & Generative AI | LLMs, RAG, Prompt Engineering, LangChain, NLP |
-| Data Science | Pandas, NumPy, Matplotlib, Se
+| Data Science | Pandas, NumPy, Matplotlib, Seaborn, EDA |
+| Backend Development | FastAPI, Flask, REST APIs |
+| Databases | SQLite, SQL |
+| Cloud & Tools | IBM Cloud, Google Cloud, AWS Fundamentals |
+| Development | Git, GitHub, Docker, Linux, VS Code, Jupyter |
+| Core Computer Science | DSA, DBMS, Operating Systems, Computer Networks, OOP |
+
+---
+
+## 💼 Learning Through Experience
+
+### AI/ML Intern — CodeMore
+*July 2026 – August 2026*
+
+- Worked on data preprocessing and feature engineering.
+- Explored classification and regression models.
+- Practiced cross-validation and hyperparameter tuning.
+- Achieved up to 94% accuracy on assigned datasets.
+- Developed reusable EDA and preprocessing scripts.
+- Used Git, GitHub, and Jupyter Notebook in the workflow.
+
+### AI & IBM Cloud Intern — IBM SkillsBuild / Edunet Foundation
+*August 2026 – September 2026*
+
+- Explored supervised and unsupervised machine learning.
+- Learned foundational IBM Cloud concepts.
+- Worked through the development lifecycle of an ML solution.
+
+---
+
+## 🎓 Education
+
+**Bachelor of Technology — Computer Science & Engineering**
+
+Institute of Engineering and Rural Technology (IERT), Prayagraj
+
+2025 – 2029
+
+**CGPA:** 8.32 / 10
+
+---
+
+## 🏅 Certifications & Learning
+
+- IBM SkillsBuild — AI & IBM Cloud Internship
+- Google AI Essentials
+- Google Prompting Essentials
+- Introduction to Generative AI — Google Cloud
+- Solution Architecture Job Simulation — Forage
+- Introduction to Prompt Engineering
+- C Programming Basics
+
+---
+
+## ✨ Under the Hood
+
+The portfolio is built with a lightweight frontend architecture and a separate serverless API endpoint.
+
+| Technology | Role |
+|---|---|
+| HTML5 | Semantic website structure |
+| CSS3 | Visual design, layout, and animations |
+| JavaScript | Dynamic content and interactions |
+| Three.js | 3D visual experience |
+| Vercel | Hosting and serverless API |
+| Google Gemini API | Planned AI assistant integration |
+
+### Project Architecture
+
+```text
+MY-PORTFOLIO/
+│
+├── api/
+│   └── chat.mjs              # Serverless chat endpoint
+│
+├── assets/
+│   └── Anuj_Kumar_Dubey_Resume.pdf
+│
+├── css/
+│   └── style.css             # Portfolio styling
+│
+├── js/
+│   ├── data.js               # Portfolio information
+│   ├── hero3d.js             # 3D hero experience
+│   ├── main.js               # Main interactions
+│   └── sections.js           # Portfolio sections
+│
+├── index.html
+└── README.md
+```
+
+---
+
+## ⚙️ Run Locally
+
+Want to explore or contribute to the project?
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/anujkumardubey152-bot/MY-PORTFOLIO.git
+```
+
+**2. Enter the project directory**
+
+```bash
+cd MY-PORTFOLIO
+```
+
+**3. Open in VS Code**
+
+```bash
+code .
+```
+
+**4. Run the frontend**
+
+Use the Live Server extension in VS Code to open `index.html`.
+
+For serverless API testing, use the Vercel development environment.
+
+---
+
+## 🤖 ASK ANUJ — AI Portfolio Assistant
+
+The portfolio includes an assistant interface designed to let visitors ask questions about my technical background, projects, skills, and experience.
+
+The intended architecture:
+
+```text
+Visitor
+   ↓
+ASK ANUJ Interface
+   ↓
+/api/chat
+   ↓
+Google Gemini API
+   ↓
+AI-generated response
+```
+
+**Integration status:** Gemini API connection is in progress.
+
+To enable it, the project will use a Vercel environment variable:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+
+---
+
+## 🌍 Connect With Me
+
+I'm interested in learning, building meaningful products, exploring AI/ML, and connecting with people who enjoy solving technical problems.
+
+<p>
+  **Anuj Kumar Dubey**<br/>
+  Computer Science & Engineering Student
+</p>
+
+- **Portfolio:** https://myportfolio-gamma-three-64.vercel.app/
+- **GitHub:** https://github.com/anujkumardubey152-bot
+- **LinkedIn:** https://www.linkedin.com/in/anuj-kumar-dubey-58043b377/
+- **Email:** anujkumardubey152@gmail.com
+
+---
+
+<p align="center">
+  <strong>LEARN. BUILD. EXPERIMENT. REPEAT.</strong><br/><br/>
+  <em>Not just another portfolio. A work in progress, driven by curiosity.</em><br/><br/>
+  ⚡ SIGNAL IN THE NOISE
+</p>
