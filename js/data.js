@@ -67,7 +67,7 @@ const portfolioData = {
     }
   ],
 
-  
+
 projects: [
   {
     name: "UPI Fraud Detection System",
@@ -83,7 +83,7 @@ projects: [
     technologies: ["Python", "Streamlit", "NLP", "TF-IDF"],
     description:
       "An AI job recommendation system that parses resumes, extracts skills and ranks job recommendations using similarity and skill coverage.",
-    url: "https://ai-job-recommendation-system-uzfuzfrtshjaa3qyxmppwg.streamlit.app/"
+    url: "https://ai-job-recommendation-system-uzfuzfrtshjaa3qyxmppwg8.streamlit.app/"
   },
   {
     name: "Dynamic Portfolio & Resume Generator",
@@ -91,9 +91,10 @@ projects: [
     technologies: ["Python", "Streamlit", "SQLite"],
     description:
       "A platform that generates ATS-friendly PDF resumes and HTML portfolios, with job matching and application tracking features.",
-    url: "https://dynamic-portfolio-resume-generator.streamlit.app/"
+    url: "https://dynamic-portfolio-resume-generator-iadgynjbtxlywu23bkczti.streamlit.app/"
   }
 ],
+  
 
   
 
