@@ -68,30 +68,31 @@ const portfolioData = {
   ],
 
 
+
 projects: [
+  {
+    name: "AI Job Recommendation System",
+    category: "AI & NLP",
+    technologies: ["Python", "Streamlit", "NLP", "TF-IDF"],
+    description:
+      "An AI job recommendation system that parses resumes, extracts skills and ranks job recommendations using similarity and skill coverage.",
+    url: "https://ai-job-recommendation-system-u.streamlit.app/"
+  },
   {
     name: "UPI Fraud Detection System",
     category: "Machine Learning",
     technologies: ["Python", "ML", "Streamlit"],
     description:
       "An ML-based application for predicting whether a user-entered transaction is fraudulent or legitimate.",
-    url: "https://upi-fraud-detection2-hk9hfhf3ylghebdfpb527g.streamlit.app/"
+    url: "https://upi-fraud-detection2-szntf72pg6hauybuxghend.streamlit.app/"
   },
   {
-    name: "CareerMatch AI",
-    category: "AI & NLP",
-    technologies: ["Python", "Streamlit", "NLP", "TF-IDF"],
-    description:
-      "An AI job recommendation system that parses resumes, extracts skills and ranks job recommendations using similarity and skill coverage.",
-    url: "https://ai-job-recommendation-system-uzfuzfrtshjaa3qyxmppwg8.streamlit.app/"
-  },
-  {
-    name: "Dynamic Portfolio & Resume Generator",
+    name: "CareerForge AI – Resume & Portfolio Generator",
     category: "Full Stack Application",
     technologies: ["Python", "Streamlit", "SQLite"],
     description:
       "A platform that generates ATS-friendly PDF resumes and HTML portfolios, with job matching and application tracking features.",
-    url: "https://dynamic-portfolio-resume-generator-iadgynjbtxlywu23bkczti.streamlit.app/"
+    url: "https://dynamic-portfolio-resume-generator-t7hhfx3eyspgz5iy5vxfrk.streamlit.app/"
   }
 ],
   
